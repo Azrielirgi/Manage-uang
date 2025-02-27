@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ngopi Santay</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Ngopi<span>Santay</span></a>
+
+      <div class="navbar-nav">
+        <a href="#" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">Tentang Kami</a>
+        <a href="#menu" class="nav-link">Menu</a>
+        <a href="#contact" class="nav-link">Kontak</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- ===== END NAVBAR ===== -->
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero">
+      <div class="content">
+        <h1>Mari nikmati secangkir kopi</h1>
+        <p>
+          Rasakan nikmatnya kopi terbaik yang kami sajikan khusus untuk Anda.
+        </p>
+      </div>
+      <div class="hero-image"></div>
+    </section>
+    <!-- ===== END HERO SECTION ===== -->
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="about">
+      <h2><span>Tentang</span> Kami</h2>
+      <div class="about-content">
+        <div class="about-image">
+          <img src="image/Tentang-kami.jpg.jpg" alt="Tentang kami" />
+        </div>
+        <div class="about-text">
+          <h3>Kenapa memilih kopi Kami?</h3>
+          <p>
+            Kami menghadirkan kopi terbaik dengan cita rasa khas yang dibuat
+            dari biji kopi pilihan. Proses pembuatan kami memastikan kualitas
+            terbaik untuk setiap cangkir kopi.
+          </p>
+          <p>
+            Kami percaya bahwa kopi bukan hanya sekedar minuman, tetapi juga
+            pengalaman. Datang dan rasakan kehangatan suasana di tempat kami.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- ===== END ABOUT SECTION ===== -->
+
+    <!-- ===== MENU SECTION ===== -->
+    <section id="menu" class="menu">
+      <h2><span>Menu</span> Kami</h2>
+      <p>Temukan berbagai varian kopi terbaik kami.</p>
+
+      <div class="menu-container">
+        <!-- Kopi Espresso -->
+        <div class="menu-item">
+          <h3>Kopi Hitam Klasik</h3>
+          <p>Rp 20.000</p>
+          <button
+            class="add-to-cart"
+            data-name="Kopi Espresso"
+            data-price="20000"
+          >
+            Beli sekarang
+          </button>
+        </div>
+
+        <!-- Kopi Latte -->
+        <div class="menu-item">
+          <h3>cappuccino Lembut</h3>
+          <p>Rp 25.000</p>
+          <button class="add-to-cart" data-name="Kopi Latte" data-price="25000">
+            Beli sekarang
+          </button>
+        </div>
+
+        <!-- Cappuccino -->
+        <div class="menu-item">
+          <h3>Latte Manis</h3>
+          <p>Rp 22.000</p>
+          <button class="add-to-cart" data-name="Cappuccino" data-price="22000">
+            Beli sekarang
+          </button>
+        </div>
+
+        <!-- Teh Hijau -->
+        <div class="menu-item">
+          <h3>Espresso Kuat</h3>
+          <p>Rp 18.000</p>
+          <button class="add-to-cart" data-name="Teh Hijau" data-price="18000">
+            Beli sekarang
+          </button>
+        </div>
+
+        <!-- Teh Hitam -->
+        <div class="menu-item">
+          <h3>Teh Hitam</h3>
+          <p>Rp 18.000</p>
+          <button class="add-to-cart" data-name="Teh Hitam" data-price="18000">
+            Beli sekarang
+          </button>
+        </div>
+
+        <!-- Croissant -->
+        <!-- Croissant -->
+        <div class="menu-item">
+          <h3>Kopi susu gula aren</h3>
+          <p>Rp 15.000</p>
+          <button class="add-to-cart" data-name="Croissant" data-price="15000">
+            Beli sekarang
+          </button>
+        </div>
+
+        <!-- Cheesecake -->
+        <div class="menu-item">
+          <h3>Mochaccino Cokelat Lezat</h3>
+          <p>Rp 30.000</p>
+          <button class="add-to-cart" data-name="Cheesecake" data-price="30000">
+            Beli sekarang
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== END MENU SECTION ===== -->
+
+    <!-- KONTAK SECTION-->
+    <section id="contact" class="contact">
+      <h2><span>Hubungi</span> Kami</h2>
+      <p class="contact-description">
+        Punya pertanyaan? Kirim pesan kepada kami, kami siap membantu Anda!
+      </p>
+
+      <form class="contact-form">
+        <label for="name">Nama</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Masukkan nama Anda"
+          required
+        />
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Masukkan email Anda"
+          required
+        />
+
+        <label for="message">Pesan</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          placeholder="Tulis pesan Anda di sini..."
+          required
+        ></textarea>
+
+        <button type="submit">Kirim Pesan</button>
+      </form>
+    </section>
+
+    <!-- Tambahkan modal pemilihan jumlah dan suhu kopi -->
+    <div id="order-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeOrderModal()">&times;</span>
+        <h2>Pilih Pesanan Anda</h2>
+        <label for="quantity">Jumlah:</label>
+        <input type="number" id="quantity" min="1" value="1" />
+
+        <label for="temperature">Pilih suhu:</label>
+        <select id="temperature">
+          <option value="Dingin">ICE</option>
+          <option value="Panas">HOT</option>
+        </select>
+        <button class="confirm-btn" onclick="confirmOrder()">Konfirmasi</button>
+      </div>
+    </div>
+    <!--Metode pembayaran-->
+    <div id="payment-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closePaymentModal()">&times;</span>
+        <h2>Pilih Metode Pembayaran</h2>
+        <button class="payment-btn" onclick="payWith('Transfer Bank')">
+          Transfer Bank
+        </button>
+        <button class="payment-btn" onclick="payWith('E-Wallet')">
+          E-Wallet
+        </button>
+      </div>
+    </div>
+
+    <div id="ewallet-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeEwalletModal()">&times;</span>
+        <h2>Pembayaran E-Wallet</h2>
+        <p>Silakan transfer ke rekening berikut:</p>
+        <p><strong>Rekening: 0899-8956-405 ( Dana/azriel irgie)</strong></p>
+        <p>Setelah transfer, silakan konfirmasi pembayaran.</p>
+        <button id="confirmButton" class="payment-btn">Konfirmasi</button>
+        <button id="closeModal" class="payment-btn">Tutup</button>
+      </div>
+    </div>
+
+    <!-- MODAL TRANSFER BANK -->
+    <div id="bank-transfer-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Pembayaran Transfer Bank</h2>
+        <p>Silakan transfer ke rekening berikut:</p>
+        <p><strong>BCA: 1234-5678-9101 (Ngopi Santay)</strong></p>
+        <button>Konfirmasi</button>
+      </div>
+    </div>
+    
+    <!-- MODAL PEMBAYARAN SUKSES -->
+    <div id="success-modal" class="modal">
+      <div class="modal-content">
+        <p>Pembayaran berhasil!</p>
+        <button id="close-success-modal">Tutup</button>
+      </div>
+    </div>
+
+    <!-- KONTAK SECTION END-->
+
+    <footer class="footer">
+      <p>© 2025 Ngopi Santay. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .getElementById("tutupModal")
+          .addEventListener("click", function () {
+            window.location.href = "#menu"; // Pastikan ada elemen dengan ID 'menu'
+          });
+      });
+    </script>
+  </body>
+</html>
